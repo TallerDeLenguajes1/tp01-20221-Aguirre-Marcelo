@@ -47,15 +47,15 @@ namespace TrabajoPractico1.Controllers
             return View();
         }
 
-        public string Problema1(string num)
+        public string Problema1(string numero)
         {
             try
             {
                 int cuadrado;
-                int numero = int.Parse(num);
+                int valor = int.Parse(numero);
 
-                cuadrado = numero * numero;
-                return $"El cuadrado de {num} es {cuadrado}";
+                cuadrado = valor * valor;
+                return $"El cuadrado de {numero} es {cuadrado}";
             }
             catch (FormatException)
             {
@@ -192,7 +192,7 @@ namespace TrabajoPractico1.Controllers
                 int litro = int.Parse(num2);
 
                 division = km / litro;
-                return $"La cantidad de km por litro es {division}";
+                return $"La cantidad de km por litro es: {division}";
             }
             catch (FormatException)
             {
