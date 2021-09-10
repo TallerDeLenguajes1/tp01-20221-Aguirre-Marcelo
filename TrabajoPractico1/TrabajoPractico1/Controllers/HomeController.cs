@@ -55,7 +55,7 @@ namespace TrabajoPractico1.Controllers
                 int valor = int.Parse(numero);
 
                 cuadrado = valor * valor;
-                return $"El cuadrado de {numero} es {cuadrado}";
+                return $"El cuadrado del {numero} es: {cuadrado}";
             }
             catch (FormatException)
             {
